@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "1zz-da-bfz"; */
+"1zz-da-bfz.text" = "OR";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "6bs-57-Qpk"; */
+"6bs-57-Qpk.normalTitle" = "SIGN IN";
+
+/* Class = "UILabel"; text = "Loaded by FirstViewController"; ObjectID = "A5M-7J-77L"; */
+"A5M-7J-77L.text" = "Loaded by FirstViewController";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "AH3-Gb-Cf4"; */
+"AH3-Gb-Cf4.placeholder" = "email";
+
+/* Class = "UILabel"; text = "email sign in"; ObjectID = "FHc-Zx-tc6"; */
+"FHc-Zx-tc6.text" = "email sign in";
+
+/* Class = "UILabel"; text = "_login"; ObjectID = "IKH-Cf-nzs"; */
+"IKH-Cf-nzs.text" = "_login";
+
+/* Class = "UILabel"; text = "First View"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "First View";
+
+/* Class = "UIButton"; normalTitle = "by email"; ObjectID = "Mr7-PB-avD"; */
+"Mr7-PB-avD.normalTitle" = "by email";
+
+/* Class = "UILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
+"NDk-cv-Gan.text" = "Loaded by SecondViewController";
+
+/* Class = "UILabel"; text = "_breakPoint"; ObjectID = "UMw-Ly-cbn"; */
+"UMw-Ly-cbn.text" = "_breakPoint";
+
+/* Class = "UIButton"; normalTitle = "LOGIN WITH FB"; ObjectID = "a3x-xF-VFj"; */
+"a3x-xF-VFj.normalTitle" = "LOGIN WITH FB";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "First";
+
+/* Class = "UITabBarItem"; title = "Second"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Second";
+
+/* Class = "UIButton"; normalTitle = "LOGIN WITH G+"; ObjectID = "lzz-4V-HRx"; */
+"lzz-4V-HRx.normalTitle" = "LOGIN WITH G+";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "nDN-Vb-wpi"; */
+"nDN-Vb-wpi.placeholder" = "password";
+
+/* Class = "UILabel"; text = "Second View"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Second View";

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07C26D7421EC338400BB8C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7321EC338400BB8C0B /* AppDelegate.swift */; };
-		07C26D7621EC338400BB8C0B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7521EC338400BB8C0B /* FirstViewController.swift */; };
-		07C26D7821EC338400BB8C0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7721EC338400BB8C0B /* SecondViewController.swift */; };
+		07C26D7621EC338400BB8C0B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7521EC338400BB8C0B /* FeedVC.swift */; };
+		07C26D7821EC338400BB8C0B /* GoupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7721EC338400BB8C0B /* GoupsVC.swift */; };
 		07C26D7B21EC338400BB8C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7921EC338400BB8C0B /* Main.storyboard */; };
 		07C26D7D21EC338400BB8C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7C21EC338400BB8C0B /* Assets.xcassets */; };
 		07C26D8021EC338400BB8C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7E21EC338400BB8C0B /* LaunchScreen.storyboard */; };
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		07C26D7021EC338400BB8C0B /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C26D7321EC338400BB8C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C26D7521EC338400BB8C0B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		07C26D7721EC338400BB8C0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		07C26D7521EC338400BB8C0B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		07C26D7721EC338400BB8C0B /* GoupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoupsVC.swift; sourceTree = "<group>"; };
 		07C26D7A21EC338400BB8C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C26D7C21EC338400BB8C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C26D7F21EC338400BB8C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		07C26D8721EC343200BB8C0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				07C26D7521EC338400BB8C0B /* FirstViewController.swift */,
-				07C26D7721EC338400BB8C0B /* SecondViewController.swift */,
+				07C26D7521EC338400BB8C0B /* FeedVC.swift */,
+				07C26D7721EC338400BB8C0B /* GoupsVC.swift */,
 				07C26D9021EC692F00BB8C0B /* AuthVC.swift */,
 				07C26D9221EC698500BB8C0B /* LoginVC.swift */,
 			);
@@ -272,12 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C26D9121EC692F00BB8C0B /* AuthVC.swift in Sources */,
-				07C26D7821EC338400BB8C0B /* SecondViewController.swift in Sources */,
+				07C26D7821EC338400BB8C0B /* GoupsVC.swift in Sources */,
 				07C26D9321EC698500BB8C0B /* LoginVC.swift in Sources */,
 				07C26D9921EC6F2F00BB8C0B /* AuthService.swift in Sources */,
 				07C26D7421EC338400BB8C0B /* AppDelegate.swift in Sources */,
 				07C26D9721EC6D5200BB8C0B /* ShadowView.swift in Sources */,
-				07C26D7621EC338400BB8C0B /* FirstViewController.swift in Sources */,
+				07C26D7621EC338400BB8C0B /* FeedVC.swift in Sources */,
 				07C26D9521EC69E200BB8C0B /* InsetTextField.swift in Sources */,
 				07C26D8F21EC393C00BB8C0B /* DataService.swift in Sources */,
 			);

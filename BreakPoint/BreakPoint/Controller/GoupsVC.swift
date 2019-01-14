@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  GoupsVC.swift
 //  BreakPoint
 //
 //  Created by Jeffrey Umandap on 14/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class GoupsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
