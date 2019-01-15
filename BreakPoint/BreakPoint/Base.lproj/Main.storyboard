@@ -242,7 +242,7 @@
                                     <constraint firstAttribute="height" constant="70" id="uw9-Dg-28b"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aev-ES-U1K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="aev-ES-U1K">
                                 <rect key="frame" x="20" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="DHd-5b-VEl"/>
@@ -266,7 +266,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntx-Hr-CJa">
-                                <rect key="frame" x="0.0" y="617" width="371" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4aF-BS-7GU"/>
@@ -296,7 +296,7 @@
                             <constraint firstItem="Z1r-oy-jqB" firstAttribute="trailing" secondItem="3z9-ng-2xq" secondAttribute="trailing" constant="20" id="kv0-hb-2mp"/>
                             <constraint firstItem="KPh-PQ-t1d" firstAttribute="leading" secondItem="Z1r-oy-jqB" secondAttribute="leading" id="n8h-9l-VeG"/>
                             <constraint firstItem="KPh-PQ-t1d" firstAttribute="trailing" secondItem="Z1r-oy-jqB" secondAttribute="trailing" id="nDO-iw-NAm"/>
-                            <constraint firstItem="Z1r-oy-jqB" firstAttribute="trailing" secondItem="Ntx-Hr-CJa" secondAttribute="trailing" constant="4" id="vlw-Sa-NpA"/>
+                            <constraint firstItem="Z1r-oy-jqB" firstAttribute="trailing" secondItem="Ntx-Hr-CJa" secondAttribute="trailing" id="vlw-Sa-NpA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z1r-oy-jqB"/>
                     </view>

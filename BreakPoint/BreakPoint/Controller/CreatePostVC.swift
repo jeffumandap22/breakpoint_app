@@ -19,11 +19,12 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
-
-    
+        sendButton.bindToKeyboard()
+        
     }
     
     @IBAction func closeButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func sendButtonPressed(_ sender: Any) {
         if textView.text != nil && textView.text != "Say something here..." {
