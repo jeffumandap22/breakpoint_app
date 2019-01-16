@@ -12,6 +12,8 @@
 		07699F0021EEE26D000CCE91 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFF21EEE26D000CCE91 /* GroupFeedCell.swift */; };
 		07699F0221EF04CD000CCE91 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699F0121EF04CD000CCE91 /* GroupFeedVC.swift */; };
 		07699F0421EF295C000CCE91 /* UIVIewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699F0321EF295C000CCE91 /* UIVIewControllerExt.swift */; };
+		07699F0821EF2EED000CCE91 /* MeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699F0721EF2EED000CCE91 /* MeCell.swift */; };
+		07699F0A21EF317A000CCE91 /* MyPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699F0921EF317A000CCE91 /* MyPost.swift */; };
 		076AA2AF21ED82E100B48CDE /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2AE21ED82E100B48CDE /* MeVC.swift */; };
 		076AA2B121ED889900B48CDE /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B021ED889900B48CDE /* CreatePostVC.swift */; };
 		076AA2B321ED90F000B48CDE /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B221ED90F000B48CDE /* UIViewExt.swift */; };
@@ -41,6 +43,8 @@
 		07699EFF21EEE26D000CCE91 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		07699F0121EF04CD000CCE91 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		07699F0321EF295C000CCE91 /* UIVIewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExt.swift; sourceTree = "<group>"; };
+		07699F0721EF2EED000CCE91 /* MeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCell.swift; sourceTree = "<group>"; };
+		07699F0921EF317A000CCE91 /* MyPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPost.swift; sourceTree = "<group>"; };
 		076AA2AE21ED82E100B48CDE /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		076AA2B021ED889900B48CDE /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		076AA2B221ED90F000B48CDE /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				076AA2BA21EDDE3800B48CDE /* UserCell.swift */,
 				07699EFB21EED67C000CCE91 /* GroupCell.swift */,
 				07699EFF21EEE26D000CCE91 /* GroupFeedCell.swift */,
+				07699F0721EF2EED000CCE91 /* MeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				076AA2B621EDB09700B48CDE /* Message.swift */,
 				07699EFD21EEDAA3000CCE91 /* Group.swift */,
+				07699F0921EF317A000CCE91 /* MyPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				076AA2B321ED90F000B48CDE /* UIViewExt.swift in Sources */,
+				07699F0821EF2EED000CCE91 /* MeCell.swift in Sources */,
 				07699F0421EF295C000CCE91 /* UIVIewControllerExt.swift in Sources */,
 				076AA2B521EDAEE000B48CDE /* FeedCell.swift in Sources */,
 				076AA2AF21ED82E100B48CDE /* MeVC.swift in Sources */,
@@ -328,6 +335,7 @@
 				07C26D9521EC69E200BB8C0B /* InsetTextField.swift in Sources */,
 				07C26D8F21EC393C00BB8C0B /* DataService.swift in Sources */,
 				076AA2B721EDB09700B48CDE /* Message.swift in Sources */,
+				07699F0A21EF317A000CCE91 /* MyPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

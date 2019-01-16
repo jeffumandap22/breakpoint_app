@@ -158,6 +158,22 @@ class DataService {
         }
     }
     
+    func getAllMyPost(handler: @escaping (_ posts: [MyPost]) -> ()) {
+        var myPostArray = [MyPost]()
+        REF_FEED.observeSingleEvent(of: .value) { (myPostSnapshot) in
+            guard let myPostSnapshot = myPostSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for posts in myPostSnapshot {
+                let post = posts.childSnapshot(forPath: "content").value as! String
+                let senderId = posts.childSnapshot(forPath: "senderId").value as! String
+                if senderId == Auth.auth().currentUser?.uid {
+                    let myPost = MyPost(post: post)
+                    myPostArray.append(myPost)
+                }
+            }
+            handler(myPostArray)
+        }
+    }
+    
     
     
 }

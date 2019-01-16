@@ -14,9 +14,21 @@ class MeVC: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var postArray = [MyPost]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DataService.instance.getAllMyPost { (returnedPosts) in
+            self.postArray = returnedPosts
+            self.tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,6 +37,7 @@ class MeVC: UIViewController {
     }
     @IBAction func signOutButtonPressed(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
+        let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
         let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
             
             do {
@@ -35,8 +48,28 @@ class MeVC: UIViewController {
                 print(error)
             }
         }
+        
         logoutPopup.addAction(logoutAction)
+        logoutPopup.addAction(cancel)
         present(logoutPopup, animated: true, completion: nil)
     }
     
+    
+}
+
+extension MeVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return postArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "meCell", for: indexPath) as? MeCell else { return UITableViewCell() }
+        let myPost = postArray[indexPath.row]
+        cell.configureCell(post: myPost.post)
+        
+        return cell
+    }
 }
