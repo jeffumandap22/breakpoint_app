@@ -477,7 +477,7 @@
         <!--Group FeedVC-->
         <scene sceneID="3Hk-j8-q9x">
             <objects>
-                <viewController id="9Cl-ta-cfU" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="9Cl-ta-cfU" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pLB-Nc-4gD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -597,7 +597,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pTd-FG-YqM" secondAttribute="trailing" constant="8" id="512-w0-Qua"/>
                                     <constraint firstAttribute="height" constant="60" id="EJh-sO-p15"/>
