@@ -31,6 +31,7 @@ class GroupFeedVC: UIViewController {
         sendButtonView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,6 +66,9 @@ class GroupFeedVC: UIViewController {
                     self.messageTextField.text = ""
                     self.messageTextField.isEnabled = true
                     self.sendButton.isEnabled = true
+                } else {
+                    self.sendButton.isEnabled = true
+                    print("There was an error!")
                 }
             })
         }
