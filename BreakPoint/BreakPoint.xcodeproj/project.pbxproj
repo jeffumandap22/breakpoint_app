@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07699EFC21EED67C000CCE91 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFB21EED67C000CCE91 /* GroupCell.swift */; };
 		076AA2AF21ED82E100B48CDE /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2AE21ED82E100B48CDE /* MeVC.swift */; };
 		076AA2B121ED889900B48CDE /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B021ED889900B48CDE /* CreatePostVC.swift */; };
 		076AA2B321ED90F000B48CDE /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B221ED90F000B48CDE /* UIViewExt.swift */; };
@@ -16,7 +17,7 @@
 		076AA2BB21EDDE3800B48CDE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2BA21EDDE3800B48CDE /* UserCell.swift */; };
 		07C26D7421EC338400BB8C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7321EC338400BB8C0B /* AppDelegate.swift */; };
 		07C26D7621EC338400BB8C0B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7521EC338400BB8C0B /* FeedVC.swift */; };
-		07C26D7821EC338400BB8C0B /* GoupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7721EC338400BB8C0B /* GoupsVC.swift */; };
+		07C26D7821EC338400BB8C0B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C26D7721EC338400BB8C0B /* GroupsVC.swift */; };
 		07C26D7B21EC338400BB8C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7921EC338400BB8C0B /* Main.storyboard */; };
 		07C26D7D21EC338400BB8C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7C21EC338400BB8C0B /* Assets.xcassets */; };
 		07C26D8021EC338400BB8C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C26D7E21EC338400BB8C0B /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07699EFB21EED67C000CCE91 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		076AA2AE21ED82E100B48CDE /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		076AA2B021ED889900B48CDE /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		076AA2B221ED90F000B48CDE /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 		07C26D7021EC338400BB8C0B /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C26D7321EC338400BB8C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C26D7521EC338400BB8C0B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
-		07C26D7721EC338400BB8C0B /* GoupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoupsVC.swift; sourceTree = "<group>"; };
+		07C26D7721EC338400BB8C0B /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		07C26D7A21EC338400BB8C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C26D7C21EC338400BB8C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C26D7F21EC338400BB8C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				07C26D7521EC338400BB8C0B /* FeedVC.swift */,
-				07C26D7721EC338400BB8C0B /* GoupsVC.swift */,
+				07C26D7721EC338400BB8C0B /* GroupsVC.swift */,
 				07C26D9021EC692F00BB8C0B /* AuthVC.swift */,
 				07C26D9221EC698500BB8C0B /* LoginVC.swift */,
 				076AA2AE21ED82E100B48CDE /* MeVC.swift */,
@@ -127,6 +129,7 @@
 				07C26D9621EC6D5200BB8C0B /* ShadowView.swift */,
 				076AA2B421EDAEE000B48CDE /* FeedCell.swift */,
 				076AA2BA21EDDE3800B48CDE /* UserCell.swift */,
+				07699EFB21EED67C000CCE91 /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,8 +298,9 @@
 				076AA2B321ED90F000B48CDE /* UIViewExt.swift in Sources */,
 				076AA2B521EDAEE000B48CDE /* FeedCell.swift in Sources */,
 				076AA2AF21ED82E100B48CDE /* MeVC.swift in Sources */,
+				07699EFC21EED67C000CCE91 /* GroupCell.swift in Sources */,
 				07C26D9121EC692F00BB8C0B /* AuthVC.swift in Sources */,
-				07C26D7821EC338400BB8C0B /* GoupsVC.swift in Sources */,
+				07C26D7821EC338400BB8C0B /* GroupsVC.swift in Sources */,
 				07C26D9321EC698500BB8C0B /* LoginVC.swift in Sources */,
 				07C26D9921EC6F2F00BB8C0B /* AuthService.swift in Sources */,
 				076AA2B921EDDA6200B48CDE /* CreateGroupsVC.swift in Sources */,
