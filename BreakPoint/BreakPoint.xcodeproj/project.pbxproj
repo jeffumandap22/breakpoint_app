@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07699EFC21EED67C000CCE91 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFB21EED67C000CCE91 /* GroupCell.swift */; };
+		07699EFE21EEDAA3000CCE91 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFD21EEDAA3000CCE91 /* Group.swift */; };
 		076AA2AF21ED82E100B48CDE /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2AE21ED82E100B48CDE /* MeVC.swift */; };
 		076AA2B121ED889900B48CDE /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B021ED889900B48CDE /* CreatePostVC.swift */; };
 		076AA2B321ED90F000B48CDE /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AA2B221ED90F000B48CDE /* UIViewExt.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		07699EFB21EED67C000CCE91 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		07699EFD21EEDAA3000CCE91 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		076AA2AE21ED82E100B48CDE /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		076AA2B021ED889900B48CDE /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		076AA2B221ED90F000B48CDE /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				076AA2B621EDB09700B48CDE /* Message.swift */,
+				07699EFD21EEDAA3000CCE91 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				07C26D9321EC698500BB8C0B /* LoginVC.swift in Sources */,
 				07C26D9921EC6F2F00BB8C0B /* AuthService.swift in Sources */,
 				076AA2B921EDDA6200B48CDE /* CreateGroupsVC.swift in Sources */,
+				07699EFE21EEDAA3000CCE91 /* Group.swift in Sources */,
 				076AA2BB21EDDE3800B48CDE /* UserCell.swift in Sources */,
 				07C26D7421EC338400BB8C0B /* AppDelegate.swift in Sources */,
 				07C26D9721EC6D5200BB8C0B /* ShadowView.swift in Sources */,
