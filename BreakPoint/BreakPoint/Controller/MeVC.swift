@@ -34,7 +34,21 @@ class MeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.emailLabel.text = Auth.auth().currentUser?.email
+        
+        
+        DataService.instance.getUserImageCode(forUID: (Auth.auth().currentUser?.uid)!) { (returnedImageCode) in
+            self.profileImage.image = self.getImageFromBase64(base64: returnedImageCode)
+            self.profileImage.layer.cornerRadius = self.profileImage.frame.width / 2
+            self.profileImage.clipsToBounds = true
+            self.profileImage.contentMode = .scaleAspectFill
+        }
     }
+    
+    func getImageFromBase64(base64:String) -> UIImage {
+        let data = Data(base64Encoded: base64)
+        return UIImage(data: data!)!
+    }
+    
     @IBAction func signOutButtonPressed(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
         let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)

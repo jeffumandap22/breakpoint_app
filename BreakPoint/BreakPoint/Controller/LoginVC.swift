@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
     @IBOutlet weak var emailField: InsetTextField!
@@ -19,6 +20,13 @@ class LoginVC: UIViewController {
         passwordField.delegate = self
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
+    }
 
     @IBAction func signInButtonPressed(_ sender: Any) {
         if emailField.text != nil && passwordField.text != nil {
@@ -26,18 +34,8 @@ class LoginVC: UIViewController {
                 if success {
                     self.dismiss(animated: true, completion: nil)
                 } else {
-                    print(String(describing: loginError?.localizedDescription))
+                    print("Error Description in Login: \(String(describing: loginError?.localizedDescription))")
                 }
-                AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, userCreationComplete: { (success, registrationError) in
-                    if success {
-                        AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginComplete: { (success, nil) in
-                            self.dismiss(animated: true, completion: nil)
-                            print("Successfully registered user.")
-                        })
-                    } else {
-                        print(String(describing: registrationError?.localizedDescription))
-                    }
-                })
             })
         }
     }

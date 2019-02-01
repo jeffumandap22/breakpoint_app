@@ -104,7 +104,7 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
             if chosenUserArray.count >= 1 {
                 groupMemberLabel.text = chosenUserArray.joined(separator: ", ")
             } else {
-                groupMemberLabel.text = "adde people to your group"
+                groupMemberLabel.text = "add people to your group"
                 doneButton.isHidden = true
             }
         }
