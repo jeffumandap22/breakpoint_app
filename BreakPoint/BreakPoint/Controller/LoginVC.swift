@@ -35,6 +35,11 @@ class LoginVC: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                 } else {
                     print("Error Description in Login: \(String(describing: loginError?.localizedDescription))")
+                    let alertPopup = UIAlertController(title: "Invalid Login!", message: loginError?.localizedDescription, preferredStyle: .alert)
+                    
+                    let alertOkBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertPopup.addAction(alertOkBtn)
+                    self.present(alertPopup, animated: true, completion: nil)
                 }
             })
         }

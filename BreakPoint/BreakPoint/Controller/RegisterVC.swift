@@ -64,8 +64,18 @@ class RegisterVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
                     })
                 } else {
                     print("Error Description in Register: \(String(describing: registrationError?.localizedDescription))")
+                    let alertPopup = UIAlertController(title: "Invalid Registration!", message: registrationError?.localizedDescription, preferredStyle: .alert)
+                    
+                    let alertOkBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertPopup.addAction(alertOkBtn)
+                    self.present(alertPopup, animated: true, completion: nil)
                 }
             })
+            
+            
+            
+            
+            
         }
     }
 

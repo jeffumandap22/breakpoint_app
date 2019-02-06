@@ -22,7 +22,6 @@ class UserCell: UITableViewCell {
     }
     
     func configureCell(profileImage image: UIImage, email: String, isSelected: Bool) {
-        self.profileImage.image = image
         self.emailLabel.text = email
         if isSelected {
             self.checkImage.isHidden = false

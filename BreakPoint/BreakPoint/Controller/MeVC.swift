@@ -50,7 +50,7 @@ class MeVC: UIViewController {
     }
     
     @IBAction func signOutButtonPressed(_ sender: Any) {
-        let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
+        let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
         let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
             

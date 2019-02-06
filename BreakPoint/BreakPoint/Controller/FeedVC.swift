@@ -22,6 +22,7 @@ class FeedVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         DataService.instance.getAllFeedMessages { (returnedMessagesArray) in
             self.messageArray = returnedMessagesArray.reversed()
             self.tableView.reloadData()
