@@ -24,6 +24,10 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSCameraUsageDescription</key>
+	<string>BreakPoint wants to use the camera to take picture</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>BreakPoint wants to open gallery to select picture</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
