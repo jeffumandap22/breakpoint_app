@@ -27,6 +27,7 @@ class GroupFeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
 
         sendButtonView.bindToKeyboard()
         tableView.delegate = self

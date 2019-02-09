@@ -24,11 +24,13 @@ class CreateGroupsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
 
         tableView.delegate = self
         tableView.dataSource = self
         emailsearchTextfield.delegate = self
         emailsearchTextfield.addTarget(self, action: #selector(textfieldDidChange), for: .editingChanged)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -114,6 +116,3 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
 extension CreateGroupsVC: UITextFieldDelegate {
     
 }
-
-
-
