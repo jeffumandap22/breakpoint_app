@@ -45,7 +45,7 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell") as? FeedCell else { return UITableViewCell() }
         let message = messageArray[indexPath.row]
         DataService.instance.getUserImageCode(forUID: message.senderId) { (returnedImageCode) in
-            var imgData = self.getImageFromBase64(base64: returnedImageCode)
+            var imgData = DataService.instance.getImageFromBase64(base64: returnedImageCode)
             if returnedImageCode == "" {
                 imgData = UIImage(named: "defaultProfileImage")!
             }
@@ -57,9 +57,6 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func getImageFromBase64(base64:String) -> UIImage {
-        let data = Data(base64Encoded: base64)
-        return UIImage(data: data!)!
-    }
+   
 }
 

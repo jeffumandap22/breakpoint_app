@@ -11,11 +11,12 @@ import Firebase
 
 class AuthVC: UIViewController {
     
+    @IBOutlet weak var fbLoginBtn: UIButton!
+    @IBOutlet weak var googleLoginBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

@@ -186,6 +186,27 @@ class DataService {
     }
     
     
+    func getImageFromBase64(base64:String) -> UIImage {
+        let data = Data(base64Encoded: base64)
+        return UIImage(data: data!)!
+    }
+    
+    public enum ImageFormat {
+        case png
+        case jpeg(CGFloat)
+    }
+    
+    func convertImageTobase64(format: ImageFormat, image:UIImage) -> String? {
+        var imageData: Data?
+        switch format {
+        case .png:
+            let newImage = image.rotate(radians: .pi * 2) // rotate to correct orientation
+            let resizedImage = newImage!.resizedTo1MB() // decrease image quality and size
+            imageData = resizedImage?.pngData()
+        case .jpeg(let compression): imageData = image.jpegData(compressionQuality: compression)
+        }
+        return imageData?.base64EncodedString()
+    }
     
 }
 

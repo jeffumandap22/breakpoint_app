@@ -93,12 +93,10 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         DataService.instance.getUserName(forUID: message.senderId) { (email) in
             
             DataService.instance.getUserImageCode(forUID: message.senderId) { (returnedImageCode) in
-                var imgData = self.getImageFromBase64(base64: returnedImageCode)
+                var imgData = DataService.instance.getImageFromBase64(base64: returnedImageCode)
                 if returnedImageCode == "" {
                     imgData = UIImage(named: "defaultProfileImage")!
                 }
-                
-                
                 
                 DataService.instance.getUserName(forUID: message.senderId) { (returnedUsername) in
                     cell.configureCell(profileImage: imgData, email: returnedUsername, content: message.content)
@@ -107,9 +105,5 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
-    
-    func getImageFromBase64(base64:String) -> UIImage {
-        let data = Data(base64Encoded: base64)
-        return UIImage(data: data!)!
-    }
+
 }

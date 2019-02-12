@@ -37,16 +37,11 @@ class MeVC: UIViewController {
         
         
         DataService.instance.getUserImageCode(forUID: (Auth.auth().currentUser?.uid)!) { (returnedImageCode) in
-            self.profileImage.image = self.getImageFromBase64(base64: returnedImageCode)
+            self.profileImage.image = DataService.instance.getImageFromBase64(base64: returnedImageCode)
             self.profileImage.layer.cornerRadius = self.profileImage.frame.width / 2
             self.profileImage.clipsToBounds = true
             self.profileImage.contentMode = .scaleAspectFill
         }
-    }
-    
-    func getImageFromBase64(base64:String) -> UIImage {
-        let data = Data(base64Encoded: base64)
-        return UIImage(data: data!)!
     }
     
     @IBAction func signOutButtonPressed(_ sender: Any) {
@@ -67,7 +62,6 @@ class MeVC: UIViewController {
         logoutPopup.addAction(cancel)
         present(logoutPopup, animated: true, completion: nil)
     }
-    
     
 }
 

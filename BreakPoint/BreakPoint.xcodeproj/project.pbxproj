@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07401175221011300031951E /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07401174221011300031951E /* UIImageExt.swift */; };
 		07699EFC21EED67C000CCE91 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFB21EED67C000CCE91 /* GroupCell.swift */; };
 		07699EFE21EEDAA3000CCE91 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFD21EEDAA3000CCE91 /* Group.swift */; };
 		07699F0021EEE26D000CCE91 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07699EFF21EEE26D000CCE91 /* GroupFeedCell.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07401174221011300031951E /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		07699EFB21EED67C000CCE91 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		07699EFD21EEDAA3000CCE91 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		07699EFF21EEE26D000CCE91 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				076AA2B221ED90F000B48CDE /* UIViewExt.swift */,
 				07699F0321EF295C000CCE91 /* UIVIewControllerExt.swift */,
+				07401174221011300031951E /* UIImageExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				07C26D9721EC6D5200BB8C0B /* ShadowView.swift in Sources */,
 				076AA2B121ED889900B48CDE /* CreatePostVC.swift in Sources */,
 				07C26D7621EC338400BB8C0B /* FeedVC.swift in Sources */,
+				07401175221011300031951E /* UIImageExt.swift in Sources */,
 				07C26D9521EC69E200BB8C0B /* InsetTextField.swift in Sources */,
 				07C26D8F21EC393C00BB8C0B /* DataService.swift in Sources */,
 				076AA2B721EDB09700B48CDE /* Message.swift in Sources */,
@@ -500,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumandap.BreakPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -520,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumandap.BreakPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
